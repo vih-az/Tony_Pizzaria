@@ -14,7 +14,9 @@ const getCategorias = function(){
 
 const getDadosProdutos = function(){
     listaProdutosJSON = {}
-    listaProdutosARRAY
+    listaProdutosARRAY = []
+
+    
 }
 
 getCategorias()

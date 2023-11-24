@@ -1,0 +1,124 @@
+body{
+    height: 100vh;
+    background-image: url(../img/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 8px;
+    gap: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(252,121,0,0.8463760504201681) 56%, rgba(252,121,0,0) 100%);
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: -1;
+}
+
+
+
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.conteudo-login{
+    color: white;
+}
+
+.conteudo-login h1{
+    width: 230px;
+}
+
+.conteudo-login p{
+    width: 320px;
+}
+
+
+.container-login{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    height: 30px;
+    width: 283px;
+    background-color: transparent;
+    padding-left: 32px;
+    color: white;
+    border-bottom: solid white 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#mail{
+    background-image: url(../img/email.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#pass{
+    background-image: url(../img/cadeado.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+input::placeholder{
+    color: white;   
+}
+
+input:focus{
+    outline: none;
+    border-bottom: solid white 1px;
+}
+
+
+.botao-login{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.botao-login p{
+    color: white;
+    display: flex;
+    justify-content: end;
+    font-weight: bolder;
+}
+
+
+.conta{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+}
+
+.conta p{
+    font-size: 14px;
+}
+
+.conta a{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}

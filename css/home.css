@@ -1,0 +1,239 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(252,121,0,0.5902777777777778) 30%, rgba(252,121,0,0) 100%);
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: -1;
+}
+
+header{
+    padding: 32px 24px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .title h1{
+    font-size: 22px;
+}
+
+header .title h2{
+    font-size: 14px;
+}
+
+.title{
+    color: white;
+}
+
+
+
+main{
+    flex-grow: 1;
+    gap: 12px;
+    padding-left: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-search{
+    display: flex;
+    justify-content: center;
+    padding-right: 23px;
+}
+
+input{
+    width: 316px;
+    height: 49px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding-left: 13px;
+    background-image: url(../img/Home_page/search.webp);
+    background-repeat: no-repeat;
+    background-position: calc(316px - 35px);
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.36);
+}
+
+
+/*  */
+.categorias, .pizzas-fav{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title h4{
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
+.pizzas{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.calabresa, .peperoni{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calabresa-preco, .peperoni-preco{
+    background-color: var(--pizzas-preco);
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 3px 4px;
+    color: white;
+}
+
+.calabresa-preco{
+    top: 19rem;
+    left: 2rem;
+}
+
+.peperoni-preco{
+    top: 19rem;
+    left: 11.9rem;
+}
+
+.calabresa-sabor, .peperoni-sabor{
+    width: 112px;
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    top: 20.57rem;
+    font-size: 12px;
+    padding: 4px 4px;
+    border-radius: 0px 0px 0px 8px;
+    color: white;
+}
+/*  */
+
+
+/*  */
+.recomendados{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pizzas-recom{
+    display: flex;
+    gap: 7px;
+}
+
+.pizzas-recom p, .pizzas-recom .brotinho-preco{
+    color: white;
+    font-size: 12px;
+}
+
+.pizzas-recom p{
+    width: 110px;
+    position: absolute;
+    top: 30rem;
+}
+
+.pizzas-recom .brotinho-preco{
+    font-weight: bold;
+}
+
+.peperoni-queijo p{
+    left: 2rem;
+}
+
+.brotinho p{
+    left: 13.7rem;
+}
+
+.brotinho .brotinho-preco{
+    background-color: var(--pizzas-preco);
+    border-radius: 16px;
+    padding: 3px 4px;
+    position: absolute;
+    top: 28rem;
+    right: 6.4rem;
+}
+/*  */
+
+
+/*  */
+.bebidas{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-bebida{
+    width: 315px;
+    height: 69px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-bebida{
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-bebida .conteudo a{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-bebida .conteudo p{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.container-bebida span{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--pizzas-preco);
+    border-radius: 16px;
+    padding: 3px 4px;
+}
+/*  */
+
+
+/*  */
+footer{
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: var(--cor-principal);
+    padding-block: 10px;
+}
+
+.perfil, footer .bebidas, .sobremesas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+footer a{
+    font-size: 14px;
+}
+

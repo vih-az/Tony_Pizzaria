@@ -21,7 +21,7 @@ var usuario = {
             senha: 'marcel123',
             telefone: '11955554444',
             endereco: [{
-                logradouro: 'Rua Londe de Algum Lugar',
+                logradouro: 'Rua Longe de Algum Lugar',
                 num_casa: '456',
                 bairro: 'Vila Xurupita',
                 cidade: 'Carapicuíba',
@@ -153,7 +153,7 @@ var produtos = {
         {
             nome: 'Coca-cola',
             descricao: 'Coca-cola 2l, embalagem econômica',
-            categoria: categorias[1],
+            categorias: categorias[1],
             preco: 'R$14,99',
             imagem: '../img/Home_page/coca.webp',
             comentario: ''
